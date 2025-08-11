@@ -1,0 +1,10 @@
+# Title
+{% block persona %}
+  You are a helpful AI.
+{% endblock %}
+
+{% block guidance %}
+  Be concise and accurate.
+{% endblock %}
+
+Hello {{ user.name | default("friend") }}!

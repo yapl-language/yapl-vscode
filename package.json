@@ -1,0 +1,100 @@
+{
+  "name": "yapl",
+  "displayName": "YAPL Prompt Language",
+  "description": "Syntax highlighting + file icons for YAPL templated prompts (Markdown/JSON/YAML/Text).",
+  "publisher": "EinfachAI",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "yapl-markdown",
+        "aliases": [
+          "YAPL (Markdown)",
+          "yapl-md"
+        ],
+        "extensions": [
+          ".md.yapl",
+          ".markdown.yapl",
+          ".prompt.md.yapl"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "yapl-json",
+        "aliases": [
+          "YAPL (JSON)",
+          "yapl-json"
+        ],
+        "extensions": [
+          ".json.yapl",
+          ".prompt.json.yapl"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "yapl-yaml",
+        "aliases": [
+          "YAPL (YAML)",
+          "yapl-yaml"
+        ],
+        "extensions": [
+          ".yaml.yapl",
+          ".yml.yapl",
+          ".prompt.yaml.yapl",
+          ".prompt.yml.yapl"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "yapl-text",
+        "aliases": [
+          "YAPL (Text)",
+          "yapl-txt"
+        ],
+        "extensions": [
+          ".txt.yapl",
+          ".prompt.txt.yapl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "yapl-markdown",
+        "scopeName": "text.yapl.md",
+        "path": "./syntaxes/yapl-md.tmLanguage.json"
+      },
+      {
+        "language": "yapl-json",
+        "scopeName": "text.yapl.json",
+        "path": "./syntaxes/yapl-json.tmLanguage.json"
+      },
+      {
+        "language": "yapl-yaml",
+        "scopeName": "text.yapl.yaml",
+        "path": "./syntaxes/yapl-yaml.tmLanguage.json"
+      },
+      {
+        "language": "yapl-text",
+        "scopeName": "text.yapl.txt",
+        "path": "./syntaxes/yapl-txt.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "yapl-icons",
+        "label": "YAPL File Icons",
+        "path": "./fileicons/yapl-icon-theme.json"
+      }
+    ]
+  }
+}

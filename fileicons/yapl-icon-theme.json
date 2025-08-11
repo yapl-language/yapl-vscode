@@ -1,0 +1,39 @@
+{
+  "iconDefinitions": {
+    "_yapl": {
+      "iconPath": "./icons/yapl-file.svg"
+    }
+  },
+  "fileExtensions": {
+    "yapl": "_yapl"
+  },
+  "languageIds": {
+    "yapl-markdown": "_yapl",
+    "yapl-json": "_yapl",
+    "yapl-yaml": "_yapl",
+    "yapl-text": "_yapl"
+  },
+  "light": {
+    "fileExtensions": {
+      "yapl": "_yapl"
+    },
+    "languageIds": {
+      "yapl-markdown": "_yapl",
+      "yapl-json": "_yapl",
+      "yapl-yaml": "_yapl",
+      "yapl-text": "_yapl"
+    }
+  },
+  "highContrast": {
+    "fileExtensions": {
+      "yapl": "_yapl"
+    },
+    "languageIds": {
+      "yapl-markdown": "_yapl",
+      "yapl-json": "_yapl",
+      "yapl-yaml": "_yapl",
+      "yapl-text": "_yapl"
+    }
+  },
+  "hidesExplorerArrows": false
+}

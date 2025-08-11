@@ -1,0 +1,100 @@
+{
+  "scopeName": "text.yapl.yaml",
+  "patterns": [
+    {
+      "include": "#comment"
+    },
+    {
+      "include": "#directive"
+    },
+    {
+      "include": "#variable"
+    },
+    {
+      "include": "source.yaml"
+    }
+  ],
+  "repository": {
+    "comment": {
+      "name": "comment.block.yapl",
+      "begin": "\\{#",
+      "end": "#\\}",
+      "patterns": [
+        {
+          "match": ".",
+          "name": "comment.block.yapl.inner"
+        }
+      ]
+    },
+    "variable": {
+      "name": "meta.interpolation.yapl",
+      "begin": "\\{\\{\\-?\\s*",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.interpolation.begin.yapl"
+        }
+      },
+      "end": "\\s*\\-?\\}\\}",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.interpolation.end.yapl"
+        }
+      },
+      "patterns": [
+        {
+          "match": "\\|\\s*[a-zA-Z_][a-zA-Z0-9_]*",
+          "name": "support.function.filter.yapl"
+        },
+        {
+          "match": "[a-zA-Z_][a-zA-Z0-9_\\.]*",
+          "name": "variable.other.yapl"
+        },
+        {
+          "match": "\\\"[^\\\"]*\\\"|'[^']*'",
+          "name": "string.quoted.yapl"
+        },
+        {
+          "match": "\\b[0-9]+(\\.[0-9]+)?\\b",
+          "name": "constant.numeric.yapl"
+        },
+        {
+          "match": "\\b(true|false|null)\\b",
+          "name": "constant.language.yapl"
+        }
+      ]
+    },
+    "directive": {
+      "name": "meta.directive.yapl",
+      "begin": "\\{\\%\\-?\\s*",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.section.directive.begin.yapl"
+        }
+      },
+      "end": "\\s*\\-?\\%\\}",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.section.directive.end.yapl"
+        }
+      },
+      "patterns": [
+        {
+          "match": "\\b(extends|block|endblock|include|with|mixin|use|import|as)\\b",
+          "name": "keyword.control.yapl"
+        },
+        {
+          "match": "[a-zA-Z_][a-zA-Z0-9_\\.:-]*",
+          "name": "entity.name.yapl"
+        },
+        {
+          "match": "\\\"[^\\\"]*\\\"|'[^']*'",
+          "name": "string.quoted.yapl"
+        },
+        {
+          "match": "\\|\\s*[a-zA-Z_][a-zA-Z0-9_]*",
+          "name": "support.function.filter.yapl"
+        }
+      ]
+    }
+  }
+}

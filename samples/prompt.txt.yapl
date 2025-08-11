@@ -1,0 +1,3 @@
+{% extends "base.md.yapl" %}
+Plain text with YAPL: {{ thing | default("something") }}
+{# comment #}

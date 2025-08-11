@@ -1,0 +1,6 @@
+meta:
+  name: Example
+body: |
+  {% block output_format -%}
+    Respond in markdown.
+  {%- endblock %}

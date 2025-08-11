@@ -1,0 +1,5 @@
+{
+  "title": "Demo",
+  "vars": { "name": "{{ user.name }}", "ok": true },
+  "body": "{% include 'partial.md.yapl' with { name: user.name } %}"
+}
