@@ -1,9 +1,9 @@
 {
-  "name": "yapl",
-  "displayName": "YAPL Prompt Language",
+  "name": "yapl-language/yapl-vscode",
+  "displayName": "YAPL VS Code Extension",
   "description": "Syntax highlighting + file icons for YAPL templated prompts (Markdown/JSON/YAML/Text).",
   "publisher": "EinfachAI",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.80.0"
   },
