@@ -60,8 +60,8 @@ jobs:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: vsce publish --packagePath ./*.vsix
 
-    #   - name: Publish to Open VSX (optional)
-    #     if: ${{ secrets.OVSX_PAT != '' }}
-    #     env:
-    #       OVSX_PAT: ${{ secrets.OVSX_PAT }}
-    #     run: ovsx publish ./*.vsix -p "$OVSX_PAT"
+      - name: Publish to Open VSX (optional)
+        if: env.OVSX_PAT != ''
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+        run: ovsx publish ./*.vsix -p "$OVSX_PAT"
