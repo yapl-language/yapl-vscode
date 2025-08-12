@@ -87,17 +87,20 @@ vsce package
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please see our [Contributing Guide](https://github.com/yapl-lang/yapl-vscode/blob/main/CONTRIBUTING.md) for details.
+Contributions are welcome! Feel free to:
+- Report bugs and issues
+- Suggest new features
+- Submit pull requests
+- Improve documentation
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 🐛 Issues & Support
 
-- [Report Issues](https://github.com/yapl-lang/yapl-vscode/issues)
-- [Feature Requests](https://github.com/yapl-lang/yapl-vscode/issues/new?template=feature_request.md)
 - [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=yapl.yapl-vscode)
+- [YAPL Community](https://yapl.dev)
 
 ---
 

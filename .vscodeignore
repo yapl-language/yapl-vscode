@@ -1,0 +1,11 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+.git/**
+**/*.map
+**/.eslintrc.json
+**/*.md
+!README.md
+node_modules/**
+samples/**
+.github/**

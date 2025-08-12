@@ -12,8 +12,27 @@
     "Themes",
     "AI"
   ],
+  "keywords": [
+    "yapl",
+    "prompt",
+    "template",
+    "ai",
+    "llm",
+    "markdown",
+    "json",
+    "yaml",
+    "syntax-highlighting"
+  ],
   "license": "MIT",
   "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yapl-lang/yapl-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yapl-lang/yapl-vscode/issues"
+  },
+  "homepage": "https://yapl.dev",
   "contributes": {
     "languages": [
       {
