@@ -1,0 +1,119 @@
+name: 🐞 Bug report (VS Code extension)
+description: Report a bug with the YAPL VS Code extension (syntax highlighting, icons, language config, etc.)
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please make sure this issue is for the VS Code extension. For usage questions, check the docs at https://yapl-language.github.io.
+
+  - type: checkboxes
+    id: bug-type
+    attributes:
+      label: What kind of bug is this?
+      options:
+        - label: Syntax highlighting / grammar (TextMate scopes)
+        - label: File icon
+        - label: Language configuration (brackets, comments, folding)
+        - label: Activation/runtime error
+        - label: Snippets/completions
+        - label: Other
+    validations:
+      required: true
+
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      placeholder: e.g. 0.0.10
+    validations:
+      required: true
+
+  - type: input
+    id: vscode-version
+    attributes:
+      label: VS Code version
+      placeholder: e.g. 1.90.2
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: e.g. macOS 14.5 / Windows 11 / Ubuntu 22.04
+    validations:
+      required: true
+
+  - type: input
+    id: file-language
+    attributes:
+      label: File extension / Language mode
+      placeholder: e.g. .json.yapl / YAPL (JSON)
+    validations:
+      required: true
+
+  - type: textarea
+    id: describe-bug
+    attributes:
+      label: Describe the bug
+      description: A clear description of the problem and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide exact steps so we can reproduce.
+      placeholder: |
+        1. Open file '...'
+        2. Paste content below
+        3. Observe incorrect highlighting/behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: sample
+    attributes:
+      label: Minimal sample file content
+      description: Paste a minimal, complete example inside code fences.
+      placeholder: |
+        ```jsonc
+        { "title": "Demo", "vars": { "name": "{{ user.name }}" } }
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: scopes
+    attributes:
+      label: Token scopes (optional but very helpful)
+      description: In VS Code run "Developer: Inspect Editor Tokens and Scopes" on the problematic text and paste the scopes here.
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (optional)
+      description: Any relevant logs from Help → Toggle Developer Tools (Console) or Output → YAPL.
+
+  - type: textarea
+    id: other-extensions
+    attributes:
+      label: Other extensions you think may conflict (optional)
+      description: List any JSON/YAML/Markdown syntax extensions enabled.

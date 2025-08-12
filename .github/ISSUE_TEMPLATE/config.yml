@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a Question
+    url: https://discord.gg/R5CsJHxTeZ
+    about: Ask questions and discuss with other community members
+  - name: Documentation
+    url: https://yapl-language.github.io
+    about: Read guides and API docs for YAPL and the VS Code extension

@@ -1,46 +1,50 @@
-# YAPL VS Code Extension
+# <img src="images/icon.png" alt="YAPL" width="28" height="28" /> YAPL for VS Code
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/yapl.yapl-vscode)](https://marketplace.visualstudio.com/items?itemName=yapl.yapl-vscode)
-[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/yapl.yapl-vscode)](https://marketplace.visualstudio.com/items?itemName=yapl.yapl-vscode)
-[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/yapl.yapl-vscode)](https://marketplace.visualstudio.com/items?itemName=yapl.yapl-vscode)
+Official VS Code extension for YAPL (Yet Another Prompt Language) — a tiny, composable prompt templating language designed for AI agents.
+
+<!-- existing badges (do not remove) -->
+
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/yapl-language/yapl-vscode/publish.yml)
+![Visual Studio Marketplace Last Updated](https://img.shields.io/visual-studio-marketplace/last-updated/EinfachAI.yapl)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/EinfachAI.yapl)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Official VS Code extension for YAPL (Yet Another Prompt Language) - a tiny, composable prompt templating language designed for AI agents.
+<!-- extra badges -->
+
+[![VS Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/EinfachAI.yapl)](https://marketplace.visualstudio.com/items?itemName=EinfachAI.yapl)
+[![VS Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/EinfachAI.yapl)](https://marketplace.visualstudio.com/items?itemName=EinfachAI.yapl)
+[![Open VSX Version](https://img.shields.io/open-vsx/v/EinfachAI/yapl)](https://open-vsx.org/extension/EinfachAI/yapl)
+[![Open VSX Downloads](https://img.shields.io/open-vsx/dt/EinfachAI/yapl)](https://open-vsx.org/extension/EinfachAI/yapl)
+[![Discord](https://img.shields.io/badge/Discord-Join%20us-5865F2?logo=discord&logoColor=white)](https://discord.gg/R5CsJHxTeZ)
+
+Quick links: [Website](https://yapl-language.github.io) · [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=EinfachAI.yapl) · [Open VSX (VSCodium)](https://open-vsx.org/extension/EinfachAI/yapl) · [Discord](https://discord.gg/R5CsJHxTeZ)
 
 ## ✨ Features
 
-- **Syntax Highlighting**: Full syntax highlighting for all YAPL file types:
-  - `*.md.yapl` - Markdown-based templates
-  - `*.json.yapl` - JSON-based templates  
-  - `*.yaml.yapl` / `*.yml.yapl` - YAML-based templates
-  - `*.txt.yapl` - Plain text templates
-- **Custom File Icons**: Beautiful YAPL-themed icons for all `.yapl` files
-- **IntelliSense**: Smart completions for YAPL syntax
-- **Error Detection**: Real-time syntax validation
-- **Code Folding**: Collapse blocks and sections for better navigation
+- Rich TextMate-based syntax highlighting for:
+  - `*.md.yapl` — Markdown templates
+  - `*.json.yapl` — JSON templates
+  - `*.yaml.yapl` / `*.yml.yapl` — YAML templates
+  - `*.txt.yapl` — Plain text templates
+- Custom file icons for all `.yapl` files (enable the "YAPL File Icons" theme)
+- Basic code folding via brackets/indentation (provided by language configuration)
 
 ## 🚀 Installation
 
-Install directly from the VS Code Marketplace:
+Install from the marketplaces:
 
-1. Open VS Code
-2. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X)
-3. Search for "YAPL"
-4. Click Install
+- VS Code Marketplace: [EinfachAI.yapl](https://marketplace.visualstudio.com/items?itemName=EinfachAI.yapl)
+- Open VSX (for VSCodium/Code OSS): [EinfachAI/yapl](https://open-vsx.org/extension/EinfachAI/yapl)
 
-Or install via command line:
+Command line:
+
 ```bash
-code --install-extension yapl.yapl-vscode
+# VS Code (from VS Marketplace)
+code --install-extension EinfachAI.yapl
+
+# VSCodium (from Open VSX)
+codium --install-extension EinfachAI.yapl
 ```
-
-## 🎨 File Icons
-
-To use the custom YAPL file icons:
-
-1. Go to **File → Preferences → File Icon Theme** (or **Code → Preferences → File Icon Theme** on macOS)
-2. Select **"YAPL File Icons"**
-
-The icons will automatically apply to all `.yapl` files regardless of the base file type.
 
 ## 📝 Usage
 
@@ -57,6 +61,28 @@ Hello {{ name | default("there") }}!
 How can I help you with {{ topic }}?
 {% endblock %}
 ```
+
+## 🖼️ Screenshots
+
+![YAPL in VS Code](images/screenshot.png)
+
+Preview (syntax highlighting excerpt):
+
+```yapl
+{# hello.md.yapl #}
+{% block system %}
+You are a helpful AI assistant.
+{% endblock %}
+
+{% block prompt %}
+Hello {{ name | default("there") }}!
+How can I help you with {{ topic }}?
+{% endblock %}
+```
+
+YAPL icon (used by the file icon theme):
+
+![YAPL icon](images/icon.png)
 
 ## 🔧 Development
 
@@ -80,14 +106,15 @@ vsce package
 
 ## 📚 YAPL Resources
 
-- [YAPL Website](https://yapl.dev)
-- [YAPL Documentation](https://yapl.dev/docs)
-- [YAPL GitHub Repository](https://github.com/yapl-lang/yapl)
-- [NPM Package](https://www.npmjs.com/package/@yapl/yapl-ts)
+- Website: [yapl-language.github.io](https://yapl-language.github.io)
+- Docs (Getting Started): [Guide → Getting Started](https://yapl-language.github.io/guide/getting-started.html)
+- GitHub (core language): [yapl-language/yapl](https://github.com/yapl-language/yapl)
+- NPM: [@yapl/yapl-ts](https://www.npmjs.com/package/@yapl/yapl-ts)
 
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+
 - Report bugs and issues
 - Suggest new features
 - Submit pull requests
@@ -99,8 +126,8 @@ This project is licensed under the MIT License.
 
 ## 🐛 Issues & Support
 
-- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=yapl.yapl-vscode)
-- [YAPL Community](https://yapl.dev)
+- YAPL Community (Discord): [Join our Discord](https://discord.gg/R5CsJHxTeZ)
+- GitHub Issues: [yapl-language/yapl-vscode/issues](https://github.com/yapl-language/yapl-vscode/issues)
 
 ---
 

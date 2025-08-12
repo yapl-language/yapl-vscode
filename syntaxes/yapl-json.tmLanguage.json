@@ -11,6 +11,9 @@
       "include": "#variable"
     },
     {
+      "include": "#string"
+    },
+    {
       "include": "source.json"
     }
   ],
@@ -23,6 +26,34 @@
         {
           "match": ".",
           "name": "comment.block.yapl.inner"
+        }
+      ]
+    },
+    "string": {
+      "name": "string.quoted.double.json",
+      "begin": "\"",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.json"
+        }
+      },
+      "end": "\"",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.json"
+        }
+      },
+      "patterns": [
+        { "include": "#variable" },
+        { "include": "#directive" },
+        { "include": "#comment" },
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape.json"
+        },
+        {
+          "match": "[^\\\"]+",
+          "name": "meta.string.content.json"
         }
       ]
     },

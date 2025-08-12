@@ -1,0 +1,65 @@
+name: ✨ Feature request (VS Code extension)
+description: Suggest an improvement for the YAPL VS Code extension
+title: "feat: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check existing issues first to avoid duplicates. For general YAPL language features, open issues in the core repo instead.
+
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      placeholder: e.g. 0.0.10
+    validations:
+      required: true
+
+  - type: input
+    id: vscode-version
+    attributes:
+      label: VS Code version
+      placeholder: e.g. 1.90.2
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: area
+    attributes:
+      label: Area
+      options:
+        - label: Syntax highlighting / grammar
+        - label: File icons
+        - label: Language configuration (comments, brackets, folding)
+        - label: Snippets/completions
+        - label: Commands / UX
+        - label: Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement (optional)
+      description: Is your feature request related to a problem? Describe it.
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like the extension to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternative solutions or features you’ve considered.
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples / mockups (optional)
+      description: If relevant, add example files, mockups, or references.
