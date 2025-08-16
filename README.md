@@ -1,4 +1,4 @@
-# <img src="images/icon.png" alt="YAPL" width="28" height="28" /> YAPL for VS Code
+# <img src="https://raw.githubusercontent.com/yapl-language/yapl-vscode/refs/heads/main/images/icon.png" alt="YAPL" width="28" height="28" /> YAPL for VS Code
 
 Official VS Code extension for YAPL (Yet Another Prompt Language) — a tiny, composable prompt templating language designed for AI agents.
 
