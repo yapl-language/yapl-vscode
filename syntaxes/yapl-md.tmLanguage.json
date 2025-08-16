@@ -79,7 +79,7 @@
       },
       "patterns": [
         {
-          "match": "\\b(extends|block|endblock|include|with|mixin|use|import|as)\\b",
+          "match": "\\b(extends|block|endblock|include|with|mixin|use|import|as|if|else|elif|endif|for|in|endfor)\\b",
           "name": "keyword.control.yapl"
         },
         {
